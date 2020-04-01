@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 
 
@@ -18,6 +19,7 @@ public:
     char *buffer;
 
     int position;
+
 
 
     Buffer(){
@@ -48,7 +50,8 @@ public:
             cout << i << "|\t";
         }
 
-        cout << endl;
+        cout << size << "|" << endl;
+
 
 
         for (int i = 0; i < size; i++) {
@@ -56,10 +59,13 @@ public:
             cout << buffer[i]<<"|\t";
         }
 
-        cout << endl;
+        cout << " |" << endl;
+
+
+
         for(int i = 0; i < size; i++){
-            if(i == size-1){
-                cout << "^";
+            if(i == size -1 ){
+                cout << "\t^";
             } else{
                 cout << "\t";
             }
@@ -76,7 +82,7 @@ public:
     void append(string input, int positions)
     {
 
-            positions = position;
+        positions = position;
             int len = input.length();
             int i = 0;
 
@@ -89,17 +95,13 @@ public:
             while (i < len) {
                 // If the gap is empty grow the size
                 if (rightGap == leftGap) {
-                    int k = len;
+                    int k = 1;
                     buffergrowth(k, positions);
                 }
 
 
-                try {
 
                     buffer[leftGap] = input[i];
-                } catch (exception e){
-                    cout << e.what();
-                }
 
                 leftGap++;
                 i++;
@@ -108,7 +110,7 @@ public:
 
             }
 
-            position = positions;
+            position = size - 1;
 
 
             printOutput();
@@ -128,7 +130,9 @@ public:
             int i = 0;
 
 
-            if (positions != leftGap) {
+
+
+        if (positions != leftGap) {
                 move_cursor(positions);
             }
 
@@ -136,7 +140,7 @@ public:
 
             while (i < len) {
                 if (rightGap == leftGap) {
-                    int k = len;
+                    int k = 1;
                     buffergrowth(k, positions);
                 }
 
@@ -150,7 +154,7 @@ public:
 
             }
 
-            position = positions;
+            position = size - 1;
             printOutput();
 
     }
@@ -197,7 +201,9 @@ public:
     void buffergrowth(int k, int position)
     {
 
+        //declare new array a with size size
         char a[size];
+
 
 
         for (int i = position; i < size; i++) {
@@ -218,14 +224,18 @@ public:
         rightGap+=k;
     }
 
+
+
+
+
     void deletion(int position, int charToRight)
     {
 
         if (position + 1 != leftGap) {
-            move_cursor(position + 1);
+            move_cursor(position);
         }
 
-        leftGap -= charToRight;
+        leftGap -= -1;
         buffer[leftGap] = ' ';
 
 
