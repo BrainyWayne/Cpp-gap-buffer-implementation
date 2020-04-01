@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/franciseshun/Desktop/Algos/hw8 mitchell/Buffer.h
+/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Buffer.h
 iostream
 -
 
-/Users/franciseshun/Desktop/Algos/hw8 mitchell/Interpreter.h
+/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Interpreter.h
 iostream
 -
 
-/Users/franciseshun/Desktop/Algos/hw8 mitchell/main.cpp
+/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/main.cpp
 iostream
 -
 Buffer.h
-/Users/franciseshun/Desktop/Algos/hw8 mitchell/Buffer.h
+/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Buffer.h
 Interpreter.h
-/Users/franciseshun/Desktop/Algos/hw8 mitchell/Interpreter.h
+/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Interpreter.h
 

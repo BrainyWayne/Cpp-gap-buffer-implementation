@@ -1,4 +1,4 @@
-# Install script for directory: /Users/franciseshun/Desktop/Algos/hw8 mitchell
+# Install script for directory: /Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/franciseshun/Desktop/Algos/hw8 mitchell/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

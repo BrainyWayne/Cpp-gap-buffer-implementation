@@ -9,6 +9,7 @@ public:
     bool cancelled = false;
 
 
+
      void showIntructions(){
         cout << "1 to delete" << endl;
         cout << "2 to append text" << endl;
@@ -17,9 +18,19 @@ public:
         cout << "Enter action: " ;
     }
 
-    int isCancelled(int choice){
+    void isCancelled(int choice){
         if(choice == -1){
+            cout << "Cancelled" << endl;
             cancelled = true;
+            exit(0);
+        }
+    }
+
+    void isCancelledString(string choice){
+        if(choice == "-1"){
+            cout << "Cancelled" << endl;
+            cancelled = true;
+            exit(0);
         }
     }
 
@@ -32,11 +43,14 @@ public:
                     cout << "Where to delete? (-1) to cancel: " ;
                     int position;
                     cin >> position;
+                    isCancelled(position);
+
 
 
                     cout << endl << "How many characters to the right? (-1) to cancel";
                     int charToRight;
                     cin >> charToRight;
+                    isCancelled(charToRight);
 
                     buffer.deletion(position, charToRight);
 
@@ -47,6 +61,7 @@ public:
                 cout << "Enter text to append, (-1) to cancel: ";
                 string input;
                 cin >> input;
+                isCancelledString(input);
                 executeChoice(2, input, buffer.position);
                 break;
             }
@@ -55,10 +70,12 @@ public:
                 cout << "At which position to insert? (-1) to cancel: ";
                 int position;
                 cin >> position;
+                isCancelled(position);
 
                 cout << "Enter text to insert, (-1) to cancel: ";
                 string input;
                 cin >> input;
+                isCancelledString(input);
 
                 executeChoice(3, input, position);
 
