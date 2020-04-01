@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/franciseshun/Desktop/Algos/hw8 mitchell/Buffer.h
+iostream
+-
+
+/Users/franciseshun/Desktop/Algos/hw8 mitchell/Interpreter.h
+iostream
+-
+
+/Users/franciseshun/Desktop/Algos/hw8 mitchell/main.cpp
+iostream
+-
+Buffer.h
+/Users/franciseshun/Desktop/Algos/hw8 mitchell/Buffer.h
+Interpreter.h
+/Users/franciseshun/Desktop/Algos/hw8 mitchell/Interpreter.h
+
