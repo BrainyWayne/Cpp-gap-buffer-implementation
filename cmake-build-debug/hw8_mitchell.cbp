@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Buffer.cpp">
+			<Option target="hw8_mitchell"/>
+		</Unit>
 		<Unit filename="/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Buffer.h">
+			<Option target="hw8_mitchell"/>
+		</Unit>
+		<Unit filename="/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Interpreter.cpp">
 			<Option target="hw8_mitchell"/>
 		</Unit>
 		<Unit filename="/Users/franciseshun/Desktop/Algos/Cpp-gap-buffer-implementation/Interpreter.h">

@@ -123,6 +123,60 @@ hw8_mitchell/fast:
 	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/build
 .PHONY : hw8_mitchell/fast
 
+Buffer.o: Buffer.cpp.o
+
+.PHONY : Buffer.o
+
+# target to build an object file
+Buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Buffer.cpp.o
+.PHONY : Buffer.cpp.o
+
+Buffer.i: Buffer.cpp.i
+
+.PHONY : Buffer.i
+
+# target to preprocess a source file
+Buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Buffer.cpp.i
+.PHONY : Buffer.cpp.i
+
+Buffer.s: Buffer.cpp.s
+
+.PHONY : Buffer.s
+
+# target to generate assembly for a file
+Buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Buffer.cpp.s
+.PHONY : Buffer.cpp.s
+
+Interpreter.o: Interpreter.cpp.o
+
+.PHONY : Interpreter.o
+
+# target to build an object file
+Interpreter.cpp.o:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Interpreter.cpp.o
+.PHONY : Interpreter.cpp.o
+
+Interpreter.i: Interpreter.cpp.i
+
+.PHONY : Interpreter.i
+
+# target to preprocess a source file
+Interpreter.cpp.i:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Interpreter.cpp.i
+.PHONY : Interpreter.cpp.i
+
+Interpreter.s: Interpreter.cpp.s
+
+.PHONY : Interpreter.s
+
+# target to generate assembly for a file
+Interpreter.cpp.s:
+	$(MAKE) -f CMakeFiles/hw8_mitchell.dir/build.make CMakeFiles/hw8_mitchell.dir/Interpreter.cpp.s
+.PHONY : Interpreter.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hw8_mitchell"
+	@echo "... Buffer.o"
+	@echo "... Buffer.i"
+	@echo "... Buffer.s"
+	@echo "... Interpreter.o"
+	@echo "... Interpreter.i"
+	@echo "... Interpreter.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

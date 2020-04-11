@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/hw8_mitchell.dir/main.cpp.o  -o hw8_mitchell 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/hw8_mitchell.dir/main.cpp.o CMakeFiles/hw8_mitchell.dir/Buffer.cpp.o CMakeFiles/hw8_mitchell.dir/Interpreter.cpp.o  -o hw8_mitchell 

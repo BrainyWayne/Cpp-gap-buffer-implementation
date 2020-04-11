@@ -3,4 +3,4 @@ project(hw8_mitchell)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(hw8_mitchell main.cpp Buffer.h Interpreter.h)
+add_executable(hw8_mitchell main.cpp Buffer.h Interpreter.h Buffer.cpp Interpreter.cpp)

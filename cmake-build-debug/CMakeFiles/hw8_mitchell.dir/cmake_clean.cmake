@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hw8_mitchell.dir/Buffer.cpp.o"
+  "CMakeFiles/hw8_mitchell.dir/Interpreter.cpp.o"
   "CMakeFiles/hw8_mitchell.dir/main.cpp.o"
   "hw8_mitchell"
   "hw8_mitchell.pdb"

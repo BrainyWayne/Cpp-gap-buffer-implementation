@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Buffer.h"
 #include "Interpreter.h"
 
 
@@ -11,24 +10,18 @@ int main() {
     Interpreter interpreter;
 
     do{
-        if(interpreter.cancelled){
+        if(interpreter.getCancelled()){
             return 0;
         }
         int choice;
-
-
-
         interpreter.showIntructions();
-
-
-
-        cin >> choice;
+       cin >> choice;
         interpreter.checkInitialInput(choice);
 
 
 
 
-    } while(!interpreter.cancelled);
+    } while(!interpreter.getCancelled());
 
     return 0;
 }
